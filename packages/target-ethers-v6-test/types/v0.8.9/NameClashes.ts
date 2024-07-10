@@ -24,6 +24,7 @@ export interface NameClashesInterface extends Interface {
     nameOrSignature:
       | "attach"
       | "connect"
+      | "deployed"
       | "filters"
       | "getAddress"
       | "getDeployedCode"
@@ -32,13 +33,16 @@ export interface NameClashesInterface extends Interface {
       | "off"
       | "on"
       | "once"
+      | "provider"
       | "runner"
+      | "signer"
       | "target"
       | "then"
   ): FunctionFragment;
 
   encodeFunctionData(functionFragment: "attach", values?: undefined): string;
   encodeFunctionData(functionFragment: "connect", values?: undefined): string;
+  encodeFunctionData(functionFragment: "deployed", values?: undefined): string;
   encodeFunctionData(functionFragment: "filters", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "getAddress",
@@ -56,12 +60,15 @@ export interface NameClashesInterface extends Interface {
   encodeFunctionData(functionFragment: "off", values?: undefined): string;
   encodeFunctionData(functionFragment: "on", values?: undefined): string;
   encodeFunctionData(functionFragment: "once", values?: undefined): string;
+  encodeFunctionData(functionFragment: "provider", values?: undefined): string;
   encodeFunctionData(functionFragment: "runner", values?: undefined): string;
+  encodeFunctionData(functionFragment: "signer", values?: undefined): string;
   encodeFunctionData(functionFragment: "target", values?: undefined): string;
   encodeFunctionData(functionFragment: "then", values?: undefined): string;
 
   decodeFunctionResult(functionFragment: "attach", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "connect", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "deployed", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "filters", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "getAddress", data: BytesLike): Result;
   decodeFunctionResult(
@@ -76,7 +83,9 @@ export interface NameClashesInterface extends Interface {
   decodeFunctionResult(functionFragment: "off", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "on", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "once", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "provider", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "runner", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "signer", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "target", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "then", data: BytesLike): Result;
 }
@@ -126,6 +135,28 @@ export interface NameClashes extends BaseContract {
 
   attach: TypedContractMethod<[], [string], "view">;
 
+  filters: TypedContractMethod<[], [string], "view">;
+
+  getAddress: TypedContractMethod<[], [string], "view">;
+
+  getDeployedCode: TypedContractMethod<[], [string], "view">;
+
+  getFunction: TypedContractMethod<[], [string], "view">;
+
+  listeners: TypedContractMethod<[], [string], "view">;
+
+  off: TypedContractMethod<[], [string], "view">;
+
+  on: TypedContractMethod<[], [string], "view">;
+
+  once: TypedContractMethod<[], [string], "view">;
+
+  runner: TypedContractMethod<[], [string], "view">;
+
+  target: TypedContractMethod<[], [string], "view">;
+
+  then: TypedContractMethod<[], [string], "view">;
+
   getFunction<T extends ContractMethod = ContractMethod>(
     key: string | FunctionFragment
   ): T;
@@ -135,6 +166,9 @@ export interface NameClashes extends BaseContract {
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
     nameOrSignature: "connect"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
+    nameOrSignature: "deployed"
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
     nameOrSignature: "filters"
@@ -159,7 +193,13 @@ export interface NameClashes extends BaseContract {
     nameOrSignature: "once"
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
+    nameOrSignature: "provider"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
     nameOrSignature: "runner"
+  ): TypedContractMethod<[], [string], "view">;
+  getFunction(
+    nameOrSignature: "signer"
   ): TypedContractMethod<[], [string], "view">;
   getFunction(
     nameOrSignature: "target"
