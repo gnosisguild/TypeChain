@@ -135,27 +135,11 @@ export interface NameClashes extends BaseContract {
 
   attach: TypedContractMethod<[], [string], "view">;
 
-  filters: TypedContractMethod<[], [string], "view">;
+  deployed: TypedContractMethod<[], [string], "view">;
 
-  getAddress: TypedContractMethod<[], [string], "view">;
+  provider: TypedContractMethod<[], [string], "view">;
 
-  getDeployedCode: TypedContractMethod<[], [string], "view">;
-
-  getFunction: TypedContractMethod<[], [string], "view">;
-
-  listeners: TypedContractMethod<[], [string], "view">;
-
-  off: TypedContractMethod<[], [string], "view">;
-
-  on: TypedContractMethod<[], [string], "view">;
-
-  once: TypedContractMethod<[], [string], "view">;
-
-  runner: TypedContractMethod<[], [string], "view">;
-
-  target: TypedContractMethod<[], [string], "view">;
-
-  then: TypedContractMethod<[], [string], "view">;
+  signer: TypedContractMethod<[], [string], "view">;
 
   getFunction<T extends ContractMethod = ContractMethod>(
     key: string | FunctionFragment

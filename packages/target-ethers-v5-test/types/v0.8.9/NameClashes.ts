@@ -171,29 +171,15 @@ export interface NameClashes extends BaseContract {
     then(overrides?: CallOverrides): Promise<[string]>;
   };
 
-  attach(overrides?: CallOverrides): Promise<string>;
-
-  filters(overrides?: CallOverrides): Promise<string>;
-
   getAddress(overrides?: CallOverrides): Promise<string>;
 
   getDeployedCode(overrides?: CallOverrides): Promise<string>;
 
   getFunction(overrides?: CallOverrides): Promise<string>;
 
-  listeners(overrides?: CallOverrides): Promise<string>;
-
-  off(overrides?: CallOverrides): Promise<string>;
-
-  on(overrides?: CallOverrides): Promise<string>;
-
-  once(overrides?: CallOverrides): Promise<string>;
-
   runner(overrides?: CallOverrides): Promise<string>;
 
   target(overrides?: CallOverrides): Promise<string>;
-
-  then(overrides?: CallOverrides): Promise<string>;
 
   callStatic: {
     attach(overrides?: CallOverrides): Promise<string>;
