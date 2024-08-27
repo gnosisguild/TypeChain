@@ -1,5 +1,12 @@
 # @gnosis-guild/typechain-hardhat
 
+## 9.1.2
+
+### Patch Changes
+
+- Updated dependencies [614841d]
+  - @gnosis-guild/typechain-ethers-v6@0.5.3
+
 ## 9.1.1
 
 ### Patch Changes
