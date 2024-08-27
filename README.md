@@ -1,12 +1,6 @@
 <p align="center">
   <img src="/docs/images/typechain-logo.png" width="300" alt="TypeChain">
   <p align="center">🔌 TypeScript bindings for Ethereum smart contracts</p>
-
-  <p align="center">
-    <a href="https://github.com/gnosisguild/TypeChain/actions"><img alt="Build Status" src="https://github.com/gnosisguild/TypeChain/workflows/CI/badge.svg"></a>
-    <img alt="Downloads" src="https://img.shields.io/npm/dm/typechain.svg">
-    <a href="/package.json"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
-  </p>
 </p>
 
 ## Fork notice
