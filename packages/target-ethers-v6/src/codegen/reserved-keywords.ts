@@ -1,6 +1,7 @@
 import { BaseContract, ZeroAddress } from 'ethers'
 
 export const ethersPassProperties = new Set(['then'])
+
 export const baseContractProperties = new Set([
   ...Object.getOwnPropertyNames(BaseContract.prototype), // for methods
   ...Object.keys(new BaseContract(ZeroAddress, [])), // for readOnly properties
