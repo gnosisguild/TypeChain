@@ -86,7 +86,7 @@ describe('DataTypesInput', () => {
   //   expect(fragment !== undefined).toEqual(true)
   // })
 
-  // tests: https://github.com/ethereum-ts/TypeChain/issues/232
+  // tests: https://github.com/gnosisguild/TypeChain/issues/232
   // NOTE: typesAssert is too simple to tests type compatibility here so we can't use it
   it('generates correct types for tuples', () => {
     type ViewTupleType = Awaited<ReturnType<typeof chain.contract.input_tuple>>

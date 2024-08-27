@@ -1,5 +1,5 @@
 {
-  "name": "@typechain/ethers-v5",
+  "name": "@gnosis-guild/typechain-ethers-v5",
   "description": "🔌 TypeChain target for ethers-v5",
   "keywords": [
     "ethers",
@@ -10,7 +10,7 @@
   ],
   "version": "11.1.2",
   "license": "MIT",
-  "repository": "https://github.com/ethereum-ts/Typechain",
+  "repository": "https://github.com/gnosisguild/TypeChain",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

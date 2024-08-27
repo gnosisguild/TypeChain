@@ -1,4 +1,4 @@
-import '@typechain/hardhat'
+import '@gnosis-guild/typechain-hardhat'
 import '@nomicfoundation/hardhat-ethers'
 import '@nomicfoundation/hardhat-chai-matchers'
 

@@ -89,7 +89,7 @@ export function generateObjectTypeLiteral(tuple: TupleType, generator: (evmType:
 
 /**
  * Always return an array type; if there are named outputs, merge them to that type
- * this generates slightly better typings fixing: https://github.com/ethereum-ts/TypeChain/issues/232
+ * this generates slightly better typings fixing: https://github.com/gnosisguild/TypeChain/issues/232
  **/
 export function generateOutputComplexType(components: AbiOutputParameter[], options: GenerateTypeOptions) {
   const existingOutputComponents = compact([

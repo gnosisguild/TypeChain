@@ -138,7 +138,7 @@ export function parseEvmType(rawType: string, components?: EvmSymbol[], internal
   }
 
   if (internalType?.startsWith('enum')) {
-    return parseEvmType('uint8') // this is a best effort approach. Sometimes enums can be uint16 too. Read more: https://github.com/ethereum-ts/TypeChain/pull/281#discussion_r513303099
+    return parseEvmType('uint8') // this is a best effort approach. Sometimes enums can be uint16 too. Read more: https://github.com/gnosisguild/TypeChain/pull/281#discussion_r513303099
   }
 
   if (internalType?.startsWith('contract')) {

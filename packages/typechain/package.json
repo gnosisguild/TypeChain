@@ -10,7 +10,7 @@
   ],
   "version": "8.3.2",
   "license": "MIT",
-  "repository": "https://github.com/ethereum-ts/Typechain",
+  "repository": "https://github.com/gnosisguild/TypeChain",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

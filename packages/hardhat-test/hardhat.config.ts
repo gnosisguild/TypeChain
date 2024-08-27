@@ -1,5 +1,5 @@
 // We load the plugin here.
-import '@typechain/hardhat'
+import '@gnosis-guild/typechain-hardhat'
 import '@nomicfoundation/hardhat-ethers'
 
 import type { HardhatUserConfig } from 'hardhat/types'

@@ -4,7 +4,7 @@
   <p align="center">Zero-config TypeChain support for Hardhat</p>
 
   <p align="center">
-    <a href="https://github.com/ethereum-ts/TypeChain/actions"><img alt="Build Status" src="https://github.com/ethereum-ts/TypeChain/workflows/CI/badge.svg"></a>
+    <a href="https://github.com/gnosisguild/TypeChain/actions"><img alt="Build Status" src="https://github.com/gnosisguild/TypeChain/workflows/CI/badge.svg"></a>
     <img alt="Downloads" src="https://img.shields.io/npm/dm/typechain.svg">
     <a href="https://github.com/prettier/prettier"><img alt="Prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"></a>
     <a href="/package.json"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
@@ -20,19 +20,19 @@ Automatically generate TypeScript bindings for smartcontracts while using [Hardh
 If you use Ethers do:
 
 ```bash
-npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v6
+npm install --save-dev typechain @gnosis-guild/typechain-hardhat @gnosis-guild/typechain-ethers-v6
 ```
 
 If you're a Truffle user you need:
 
 ```bash
-npm install --save-dev typechain @typechain/hardhat @typechain/truffle-v5
+npm install --save-dev typechain @gnosis-guild/typechain-hardhat @gnosis-guild/typechain-truffle-v5
 ```
 
 And add the following statements to your `hardhat.config.js`:
 
 ```javascript
-require('@typechain/hardhat')
+require('@gnosis-guild/typechain-hardhat')
 require('@nomicfoundation/hardhat-ethers')
 require('@nomicfoundation/hardhat-chai-matchers')
 ```
@@ -40,7 +40,7 @@ require('@nomicfoundation/hardhat-chai-matchers')
 Or, if you use TypeScript, add this to your `hardhat.config.ts`:
 
 ```typescript
-import '@typechain/hardhat'
+import '@gnosis-guild/typechain-hardhat'
 import '@nomicfoundation/hardhat-ethers'
 import '@nomicfoundation/hardhat-chai-matchers'
 ```
@@ -92,7 +92,7 @@ hardhat typechain # always regenerates typings to all files
 
 This plugin extends the `hardhatConfig` optional `typechain` object. The object contains two fields, `outDir` and
 `target`. `outDir` is the output directory of the artifacts that TypeChain creates (defaults to `typechain`). `target`
-is one of the targets specified by the TypeChain [docs](https://github.com/ethereum-ts/TypeChain#cli) (defaults to
+is one of the targets specified by the TypeChain [docs](https://github.com/gnosisguild/TypeChain#cli) (defaults to
 `ethers`).
 
 This is an example of how to set it:
@@ -104,15 +104,15 @@ module.exports = {
     target: 'ethers-v6',
     alwaysGenerateOverloads: false, // should overloads with full signatures like deposit(uint256) be generated always, even if there are no overloads?
     externalArtifacts: ['externalArtifacts/*.json'], // optional array of glob patterns with external artifacts to process (for example external libs from node_modules)
-    dontOverrideCompile: false // defaults to false
+    dontOverrideCompile: false, // defaults to false
   },
 }
 ```
 
 ## Usage
 
-`npx hardhat compile` - Compiles and generates Typescript typings for your contracts. Example Ethers + Hardhat Chai Matchers test that
-uses typedefs for contracts:
+`npx hardhat compile` - Compiles and generates Typescript typings for your contracts. Example Ethers + Hardhat Chai
+Matchers test that uses typedefs for contracts:
 
 ```ts
 import { ethers } from 'hardhat'
@@ -130,7 +130,7 @@ describe('Counter', () => {
     const signers = await ethers.getSigners()
 
     // 2
-    counter = await ethers.deployContract("Counter")
+    counter = await ethers.deployContract('Counter')
 
     // 3
     const initialCount = await counter.getCount()
@@ -166,8 +166,8 @@ describe('Counter', () => {
 ## Examples
 
 - [starter kit](https://github.com/rhlsthrm/typescript-solidity-dev-starter-kit)
-- [example-ethers](https://github.com/ethereum-ts/TypeChain/tree/master/examples/hardhat)
-- [example-truffle](https://github.com/ethereum-ts/TypeChain/tree/master/examples/hardhat-truffle-v5)
+- [example-ethers](https://github.com/gnosisguild/TypeChain/tree/master/examples/hardhat)
+- [example-truffle](https://github.com/gnosisguild/TypeChain/tree/master/examples/hardhat-truffle-v5)
 - @paulrberg's [solidity-template](https://github.com/paulrberg/solidity-template)
 
 Original work done by [@RHLSTHRM](https://twitter.com/RHLSTHRM).
