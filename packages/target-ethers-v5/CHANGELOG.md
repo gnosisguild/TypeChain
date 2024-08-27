@@ -1,5 +1,11 @@
 # @gnosis-guild/typechain-ethers-v5
 
+## 11.1.3
+
+### Patch Changes
+
+- 083dea0: Fix clashes with built-in contract properties
+
 ## 11.1.2
 
 ### Patch Changes
