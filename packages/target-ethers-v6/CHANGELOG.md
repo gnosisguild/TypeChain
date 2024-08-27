@@ -1,5 +1,11 @@
 # @gnosis-guild/typechain-ethers-v6
 
+## 0.5.3
+
+### Patch Changes
+
+- 614841d: fix: error in reserved keywords handling
+
 ## 0.5.2
 
 ### Patch Changes
