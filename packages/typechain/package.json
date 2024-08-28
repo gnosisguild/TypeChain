@@ -50,11 +50,11 @@
     "@types/glob": "^5.0.35",
     "@types/lodash": "^4.14.139",
     "@types/mkdirp": "^1.0.1",
-    "@types/node": "18.14.0",
+    "@types/node": "^18.19.47",
     "bluebird": "^3.5.1",
     "coveralls": "^3.0.2"
   },
   "peerDependencies": {
-    "typescript": ">=4.3.0"
+    "typescript": ">=4.7.0"
   }
 }
