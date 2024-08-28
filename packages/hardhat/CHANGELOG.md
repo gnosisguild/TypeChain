@@ -1,5 +1,16 @@
 # @gnosis-guild/typechain-hardhat
 
+## 9.2.0
+
+### Minor Changes
+
+- 13d6426: feat: add support for typescript v5
+
+### Patch Changes
+
+- Updated dependencies [13d6426]
+  - @gnosis-guild/typechain-ethers-v6@0.5.4
+
 ## 9.1.2
 
 ### Patch Changes

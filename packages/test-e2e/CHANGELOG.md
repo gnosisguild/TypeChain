@@ -1,5 +1,12 @@
 # test-e2e
 
+## 9.9.21
+
+### Patch Changes
+
+- Updated dependencies [13d6426]
+  - @gnosis-guild/typechain-ethers-v5@11.2.0
+
 ## 9.9.20
 
 ### Patch Changes

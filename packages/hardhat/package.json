@@ -11,7 +11,7 @@
     "smartcontract",
     "blockchain"
   ],
-  "version": "9.1.2",
+  "version": "9.2.0",
   "license": "MIT",
   "repository": "https://github.com/gnosisguild/TypeChain",
   "main": "./dist/index.js",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
-    "@gnosis-guild/typechain-ethers-v6": "workspace:^0.5.3",
+    "@gnosis-guild/typechain-ethers-v6": "workspace:^0.5.4",
     "@types/fs-extra": "^9.0.7",
     "@types/rimraf": "^3.0.0",
     "ethers": "^6.1.0",
@@ -44,7 +44,7 @@
     "typescript": ">=4.7.0"
   },
   "peerDependencies": {
-    "@gnosis-guild/typechain-ethers-v6": "workspace:^0.5.3",
+    "@gnosis-guild/typechain-ethers-v6": "workspace:^0.5.4",
     "ethers": "^6.1.0",
     "hardhat": "^2.9.9",
     "typechain": "workspace:^8.3.2"
