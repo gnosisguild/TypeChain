@@ -135,7 +135,7 @@ importers:
         specifier: workspace:^8.3.2
         version: link:../../packages/typechain
       typescript:
-        specifier: ^5
+        specifier: '>=4.7.0'
         version: 5.5.4
 
   examples/ethers-v6-nodenext:
@@ -157,7 +157,7 @@ importers:
         specifier: workspace:^8.3.2
         version: link:../../packages/typechain
       typescript:
-        specifier: ^5
+        specifier: '>=4.7.0'
         version: 5.5.4
 
   examples/hardhat:
@@ -254,7 +254,7 @@ importers:
         specifier: workspace:^8.3.2
         version: link:../typechain
       typescript:
-        specifier: ^5
+        specifier: '>=4.7.0'
         version: 5.5.4
 
   packages/hardhat-test:
@@ -294,7 +294,7 @@ importers:
         version: 4.17.21
       ts-essentials:
         specifier: ^7.0.1
-        version: 7.0.3(typescript@4.6.2)
+        version: 7.0.3(typescript@5.5.4)
     devDependencies:
       '@ethersproject/abi':
         specifier: ^5.0.0
@@ -324,8 +324,8 @@ importers:
         specifier: workspace:^8.3.2
         version: link:../typechain
       typescript:
-        specifier: '>=4.3.0'
-        version: 4.6.2
+        specifier: '>=4.7.0'
+        version: 5.5.4
 
   packages/target-ethers-v5-test:
     dependencies:
@@ -479,10 +479,10 @@ importers:
         version: 2.2.1
       ts-essentials:
         specifier: ^7.0.1
-        version: 7.0.3(typescript@4.9.5)
+        version: 7.0.3(typescript@5.5.4)
       typescript:
-        specifier: '>=4.3.0'
-        version: 4.9.5
+        specifier: '>=4.7.0'
+        version: 5.5.4
     devDependencies:
       '@types/bluebird':
         specifier: ^3.5.18
@@ -10130,17 +10130,6 @@ packages:
       typescript: 5.5.4
     dev: true
 
-  /ts-essentials@7.0.3(typescript@4.6.2):
-    resolution: {integrity: sha512-8+gr5+lqO3G84KdiTSMRLtuyJ+nTBVRKuCrK4lidMPdVeEp0uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT/xQ==}
-    peerDependencies:
-      typescript: '>=3.7.0'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 4.6.2
-    dev: false
-
   /ts-essentials@7.0.3(typescript@4.9.5):
     resolution: {integrity: sha512-8+gr5+lqO3G84KdiTSMRLtuyJ+nTBVRKuCrK4lidMPdVeEp0uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT/xQ==}
     peerDependencies:
@@ -10362,11 +10351,6 @@ packages:
   /typedarray@0.0.6:
     resolution: {integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=}
     dev: true
-
-  /typescript@4.6.2:
-    resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
 
   /typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
