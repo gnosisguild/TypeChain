@@ -1,5 +1,11 @@
 # @gnosis-guild/typechain-ethers-v5
 
+## 11.2.0
+
+### Minor Changes
+
+- 13d6426: feat: add support for typescript v5
+
 ## 11.1.3
 
 ### Patch Changes
