@@ -67,6 +67,7 @@ export function codegenContractTypings(contract: Contract, codegenConfig: Codege
   export interface ${contract.name} extends BaseContract {
     ${codegenConfig.discriminateTypes ? `contractName: '${contract.name}';\n` : ``}
     connect(runner?: ContractRunner | null): ${contract.name};
+    attach(target: string | Addressable): ${contract.name};
     waitForDeployment(): Promise<this>;
 
     interface: ${contract.name}Interface;
@@ -104,6 +105,7 @@ export function codegenContractTypings(contract: Contract, codegenConfig: Codege
     createImportsForUsedIdentifiers(
       {
         'type ethers': [
+          'Addressable',
           'BaseContract',
           'BigNumberish',
           'BytesLike',

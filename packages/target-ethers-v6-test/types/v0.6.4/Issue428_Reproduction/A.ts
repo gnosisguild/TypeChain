@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   FunctionFragment,
   Interface,
@@ -37,6 +38,7 @@ export namespace CommittedEvent {
 
 export interface A extends BaseContract {
   connect(runner?: ContractRunner | null): A;
+  attach(target: string | Addressable): A;
   waitForDeployment(): Promise<this>;
 
   interface: AInterface;

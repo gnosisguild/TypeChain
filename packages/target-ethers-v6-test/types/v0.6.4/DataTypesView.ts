@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -138,6 +139,7 @@ export interface DataTypesViewInterface extends Interface {
 
 export interface DataTypesView extends BaseContract {
   connect(runner?: ContractRunner | null): DataTypesView;
+  attach(target: string | Addressable): DataTypesView;
   waitForDeployment(): Promise<this>;
 
   interface: DataTypesViewInterface;

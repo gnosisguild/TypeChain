@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BytesLike,
   FunctionFragment,
@@ -32,6 +33,7 @@ export interface PayableFactoryInterface extends Interface {
 
 export interface PayableFactory extends BaseContract {
   connect(runner?: ContractRunner | null): PayableFactory;
+  attach(target: string | Addressable): PayableFactory;
   waitForDeployment(): Promise<this>;
 
   interface: PayableFactoryInterface;

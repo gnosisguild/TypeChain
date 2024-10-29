@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -167,6 +168,7 @@ export namespace TransferEvent {
 
 export interface IERC721 extends BaseContract {
   connect(runner?: ContractRunner | null): IERC721;
+  attach(target: string | Addressable): IERC721;
   waitForDeployment(): Promise<this>;
 
   interface: IERC721Interface;

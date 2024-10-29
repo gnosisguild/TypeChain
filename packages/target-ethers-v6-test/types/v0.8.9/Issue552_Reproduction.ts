@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -72,6 +73,7 @@ export interface Issue552_ReproductionInterface extends Interface {
 
 export interface Issue552_Reproduction extends BaseContract {
   connect(runner?: ContractRunner | null): Issue552_Reproduction;
+  attach(target: string | Addressable): Issue552_Reproduction;
   waitForDeployment(): Promise<this>;
 
   interface: Issue552_ReproductionInterface;

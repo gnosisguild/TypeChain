@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BytesLike,
   FunctionFragment,
@@ -29,6 +30,7 @@ export interface NestedLibraryInterface extends Interface {
 
 export interface NestedLibrary extends BaseContract {
   connect(runner?: ContractRunner | null): NestedLibrary;
+  attach(target: string | Addressable): NestedLibrary;
   waitForDeployment(): Promise<this>;
 
   interface: NestedLibraryInterface;

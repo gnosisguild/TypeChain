@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   FunctionFragment,
@@ -52,6 +53,7 @@ export namespace Committed_address_array_Event {
 
 export interface B extends BaseContract {
   connect(runner?: ContractRunner | null): B;
+  attach(target: string | Addressable): B;
   waitForDeployment(): Promise<this>;
 
   interface: BInterface;

@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -65,6 +66,7 @@ export namespace HighestBidIncreasedEvent {
 
 export interface KingOfTheHill extends BaseContract {
   connect(runner?: ContractRunner | null): KingOfTheHill;
+  attach(target: string | Addressable): KingOfTheHill;
   waitForDeployment(): Promise<this>;
 
   interface: KingOfTheHillInterface;

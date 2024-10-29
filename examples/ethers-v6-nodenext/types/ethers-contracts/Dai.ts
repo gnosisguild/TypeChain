@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -230,6 +231,7 @@ export namespace TransferEvent {
 
 export interface Dai extends BaseContract {
   connect(runner?: ContractRunner | null): Dai;
+  attach(target: string | Addressable): Dai;
   waitForDeployment(): Promise<this>;
 
   interface: DaiInterface;

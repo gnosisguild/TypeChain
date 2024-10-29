@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   FunctionFragment,
   Interface,
@@ -20,6 +21,7 @@ export interface EdgeCasesInterface extends Interface {}
 
 export interface EdgeCases extends BaseContract {
   connect(runner?: ContractRunner | null): EdgeCases;
+  attach(target: string | Addressable): EdgeCases;
   waitForDeployment(): Promise<this>;
 
   interface: EdgeCasesInterface;

@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -30,6 +31,7 @@ export interface LibInterface extends Interface {
 
 export interface Lib extends BaseContract {
   connect(runner?: ContractRunner | null): Lib;
+  attach(target: string | Addressable): Lib;
   waitForDeployment(): Promise<this>;
 
   interface: LibInterface;

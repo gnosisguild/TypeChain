@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BytesLike,
   FunctionFragment,
@@ -29,6 +30,7 @@ export interface WithdrawableInterface extends Interface {
 
 export interface Withdrawable extends BaseContract {
   connect(runner?: ContractRunner | null): Withdrawable;
+  attach(target: string | Addressable): Withdrawable;
   waitForDeployment(): Promise<this>;
 
   interface: WithdrawableInterface;
