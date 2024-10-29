@@ -135,8 +135,6 @@ export interface NameClashes extends BaseContract {
     event?: TCEvent
   ): Promise<this>;
 
-  attach: TypedContractMethod<[], [string], "view">;
-
   deployed: TypedContractMethod<[], [string], "view">;
 
   provider: TypedContractMethod<[], [string], "view">;
