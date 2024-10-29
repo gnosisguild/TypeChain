@@ -1,5 +1,11 @@
 # @gnosis-guild/typechain-ethers-v6
 
+## 0.5.5
+
+### Patch Changes
+
+- 54bda27: typed `attach` return value
+
 ## 0.5.4
 
 ### Patch Changes
