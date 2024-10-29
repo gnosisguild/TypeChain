@@ -1,5 +1,11 @@
 # @gnosis-guild/typechain-hardhat
 
+## 9.2.1
+
+### Patch Changes
+
+- 8a75207: feat: typed `attach` return value
+
 ## 9.2.0
 
 ### Minor Changes

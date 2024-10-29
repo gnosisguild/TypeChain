@@ -1,7 +1,7 @@
 {
   "name": "@gnosis-guild/typechain-ethers-v6-test",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check \"./**/*.ts\"",

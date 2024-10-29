@@ -1,7 +1,7 @@
 {
   "name": "@gnosis-guild/typechain-hardhat-test",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check \"./**/*.ts\"",
@@ -19,7 +19,7 @@
     "@ethersproject/abi": "^5.4.7",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
     "@gnosis-guild/typechain-ethers-v6": "workspace:^0.5.4",
-    "@gnosis-guild/typechain-hardhat": "workspace:^9.2.0",
+    "@gnosis-guild/typechain-hardhat": "workspace:^9.2.1",
     "ethers": "~6.3.0",
     "hardhat": "^2.9.9",
     "test-utils": "1.0.0",
