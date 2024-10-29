@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -46,6 +47,7 @@ export interface OverloadsInterface extends Interface {
 
 export interface Overloads extends BaseContract {
   connect(runner?: ContractRunner | null): Overloads;
+  attach(target: string | Addressable): Overloads;
   waitForDeployment(): Promise<this>;
 
   interface: OverloadsInterface;

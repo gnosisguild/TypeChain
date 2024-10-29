@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -48,6 +49,7 @@ export interface SafeMathInterface extends Interface {
 
 export interface SafeMath extends BaseContract {
   connect(runner?: ContractRunner | null): SafeMath;
+  attach(target: string | Addressable): SafeMath;
   waitForDeployment(): Promise<this>;
 
   interface: SafeMathInterface;

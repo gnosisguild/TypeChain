@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -140,6 +141,7 @@ export namespace TransferEvent {
 
 export interface ERC20 extends BaseContract {
   connect(runner?: ContractRunner | null): ERC20;
+  attach(target: string | Addressable): ERC20;
   waitForDeployment(): Promise<this>;
 
   interface: ERC20Interface;

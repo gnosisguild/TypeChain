@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BytesLike,
   FunctionFragment,
@@ -92,6 +93,7 @@ export interface NameClashesInterface extends Interface {
 
 export interface NameClashes extends BaseContract {
   connect(runner?: ContractRunner | null): NameClashes;
+  attach(target: string | Addressable): NameClashes;
   waitForDeployment(): Promise<this>;
 
   interface: NameClashesInterface;

@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -400,6 +401,7 @@ export namespace event_struct_2Event {
 
 export interface DataTypesInput extends BaseContract {
   connect(runner?: ContractRunner | null): DataTypesInput;
+  attach(target: string | Addressable): DataTypesInput;
   waitForDeployment(): Promise<this>;
 
   interface: DataTypesInputInterface;

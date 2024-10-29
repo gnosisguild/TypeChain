@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   FunctionFragment,
   Interface,
@@ -20,6 +21,7 @@ export interface HelloInterface extends Interface {}
 
 export interface Hello extends BaseContract {
   connect(runner?: ContractRunner | null): Hello;
+  attach(target: string | Addressable): Hello;
   waitForDeployment(): Promise<this>;
 
   interface: HelloInterface;

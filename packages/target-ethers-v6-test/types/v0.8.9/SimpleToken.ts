@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -34,6 +35,7 @@ export interface SimpleTokenInterface extends Interface {
 
 export interface SimpleToken extends BaseContract {
   connect(runner?: ContractRunner | null): SimpleToken;
+  attach(target: string | Addressable): SimpleToken;
   waitForDeployment(): Promise<this>;
 
   interface: SimpleTokenInterface;

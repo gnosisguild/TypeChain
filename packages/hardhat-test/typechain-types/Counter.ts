@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -52,6 +53,7 @@ export namespace CountedToEvent {
 
 export interface Counter extends BaseContract {
   connect(runner?: ContractRunner | null): Counter;
+  attach(target: string | Addressable): Counter;
   waitForDeployment(): Promise<this>;
 
   interface: CounterInterface;

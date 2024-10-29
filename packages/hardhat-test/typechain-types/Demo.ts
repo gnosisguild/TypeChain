@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   FunctionFragment,
@@ -37,6 +38,7 @@ export interface DemoInterface extends Interface {}
 
 export interface Demo extends BaseContract {
   connect(runner?: ContractRunner | null): Demo;
+  attach(target: string | Addressable): Demo;
   waitForDeployment(): Promise<this>;
 
   interface: DemoInterface;

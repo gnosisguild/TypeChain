@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BytesLike,
   FunctionFragment,
@@ -31,6 +32,7 @@ export interface NAME12manglingInterface extends Interface {
 
 export interface NAME12mangling extends BaseContract {
   connect(runner?: ContractRunner | null): NAME12mangling;
+  attach(target: string | Addressable): NAME12mangling;
   waitForDeployment(): Promise<this>;
 
   interface: NAME12manglingInterface;

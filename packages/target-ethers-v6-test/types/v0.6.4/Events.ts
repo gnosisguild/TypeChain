@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -228,6 +229,7 @@ export namespace UpdateFrequencySetEvent {
 
 export interface Events extends BaseContract {
   connect(runner?: ContractRunner | null): Events;
+  attach(target: string | Addressable): Events;
   waitForDeployment(): Promise<this>;
 
   interface: EventsInterface;

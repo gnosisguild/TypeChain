@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -37,6 +38,7 @@ export interface IERC721ReceiverInterface extends Interface {
 
 export interface IERC721Receiver extends BaseContract {
   connect(runner?: ContractRunner | null): IERC721Receiver;
+  attach(target: string | Addressable): IERC721Receiver;
   waitForDeployment(): Promise<this>;
 
   interface: IERC721ReceiverInterface;

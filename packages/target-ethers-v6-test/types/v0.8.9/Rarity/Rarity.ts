@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type {
+  Addressable,
   BaseContract,
   BigNumberish,
   BytesLike,
@@ -313,6 +314,7 @@ export namespace summonedEvent {
 
 export interface Rarity extends BaseContract {
   connect(runner?: ContractRunner | null): Rarity;
+  attach(target: string | Addressable): Rarity;
   waitForDeployment(): Promise<this>;
 
   interface: RarityInterface;
