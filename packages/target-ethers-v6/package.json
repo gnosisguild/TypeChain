@@ -8,7 +8,7 @@
     "TypeChain",
     "TypeScript"
   ],
-  "version": "0.5.4",
+  "version": "0.5.5",
   "license": "MIT",
   "repository": "https://github.com/gnosisguild/TypeChain",
   "main": "./dist/index.js",
